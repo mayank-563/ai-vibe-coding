@@ -40,21 +40,21 @@
 
 -Multi-cuisine menu support (Indian, American, Italian, French, British)
 
---Smart dish search by name, ingredients, tags, calories, and preferences
+-Smart dish search by name, ingredients, tags, calories, and preferences
 
---Cuisine filter pills for quick menu browsing
+-Cuisine filter pills for quick menu browsing
 
---Dynamic dish cards with price, rating, calories, spice level, and ingredients
+-Dynamic dish cards with price, rating, calories, spice level, and ingredients
 
---Veg / Non-Veg, spicy, healthy, and dessert recommendations
+-Veg / Non-Veg, spicy, healthy, and dessert recommendations
 
---Quick suggestion chips for instant user interaction
+-Quick suggestion chips for instant user interaction
 
---Typing indicator and smooth conversational flow
+-Typing indicator and smooth conversational flow
 
---Modern glassmorphism UI with animations
+-Modern glassmorphism UI with animations
 
---Fully responsive (mobile & desktop)
+-Fully responsive (mobile & desktop)
 
 
 ### 🌓 Dark/Light Mode
