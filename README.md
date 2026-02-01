@@ -239,4 +239,4 @@ Visit the [live demo](https://whysahil.github.io/The-Spice-Route-Cuisine/) to se
 
 ⭐ Star this repo if you find it helpful!
 
-Made with ❤️ and ☕ by [Sahil Singh](https://github.com/Whysahil)
+Made with ❤️ and ☕ by [Mayank kumar](https://github.com/mayank-563)
