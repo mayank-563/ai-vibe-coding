@@ -35,6 +35,17 @@
 - **Language Toggle** - Switch between English and Hindi
 - **Persistent Preference** - Language choice saved in browser
 - **Floating Button** - Easy access language switcher
+### 🤖 chatbot
+--Floating AI chatbot integrated into the restaurant website
+--Multi-cuisine menu support (Indian, American, Italian, French, British)
+--Smart dish search by name, ingredients, tags, calories, and preferences
+--Cuisine filter pills for quick menu browsing
+--Dynamic dish cards with price, rating, calories, spice level, and ingredients
+--Veg / Non-Veg, spicy, healthy, and dessert recommendations
+--Quick suggestion chips for instant user interaction
+--Typing indicator and smooth conversational flow
+--Modern glassmorphism UI with animations
+--Fully responsive (mobile & desktop)
 
 ### 🌓 Dark/Light Mode
 - **Theme Toggle** - Beautiful dark and light color schemes
