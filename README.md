@@ -224,8 +224,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Sahil Singh (Whysahil)**
-- GitHub: [@Whysahil](https://github.com/Whysahil)
+**Mayank kumar**
+- GitHub: [Mayank kumar](https://github.com/mayank-563)
 - Portfolio: Full-stack web development
 - Role: Design, Development, and Deployment
 
