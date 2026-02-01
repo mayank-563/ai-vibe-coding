@@ -36,9 +36,9 @@
 - **Persistent Preference** - Language choice saved in browser
 - **Floating Button** - Easy access language switcher
 ### 🤖 chatbot
---Floating AI chatbot integrated into the restaurant website
+-Floating AI chatbot integrated into the restaurant website
 
---Multi-cuisine menu support (Indian, American, Italian, French, British)
+-Multi-cuisine menu support (Indian, American, Italian, French, British)
 
 --Smart dish search by name, ingredients, tags, calories, and preferences
 
