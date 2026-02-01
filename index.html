@@ -1,0 +1,2875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-fixed">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="logo.png1.png" class="brand-logo" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation">
+                        <button class="menu-toggle"><span></span><span></span></button>
+                        <nav class="header-menu">
+                            <ul class="menu food-nav-menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-right">
+                            <div class="header-search-form">
+                                <input type="search" id="menuSearch" class="form-input" placeholder="Search dishes...">
+                                <button type="button" id="searchBtn">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                            <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">
+                                <i class="uil uil-sun"></i>
+                            </button>
+                            <button class="header-btn header-cart" id="cartBtn">
+                                <i class="uil uil-shopping-bag"></i>
+                                <span class="cart-number">0</span>
+                            </button>
+                            <button class="header-btn" id="reservationBtn" title="Book a table">
+                                <i class="uil uil-calendar-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends  -->
+
+    <div id="viewport">
+        <div id="js-scroll-content">
+            <section class="main-banner" id="home">
+                <div class="js-parallax-scene">
+                    <div class="banner-shape-1 w-100" data-depth="0.30">
+                        <img src="assets/images/berry.png" alt="">
+                    </div>
+                    <div class="banner-shape-2 w-100" data-depth="0.25">
+                        <img src="assets/images/leaf.png" alt="">
+                    </div>
+                </div>
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="banner-text">
+                                    <h1 class="h1-title">
+                                        Welcome to our
+                                        <span>Krishna</span>
+                                        Cuisine.
+                                    </h1>
+                                    <p>Savor the taste of home at Krishna Cuisine.– where every bite is pure love and tradition! 🌿🍛 Authentic Indian vegetarian/non-vegetarian delights, served with warmth and care.</p>
+                                    <div class="banner-btn mt-4">
+                                        <a href="menu-page.html" class="sec-btn">View Full Menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="banner-img-wp">
+                                    <div class="banner-img" style="background-image: url(assets/images/main-b.jpg);">
+                                    </div>
+                                </div>
+                                <div class="banner-img-text mt-4 m-auto">
+                                    <h5 class="h5-title">Sushi</h5>
+                                    <p>Delicious flavors, crafted with love and tradition!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="brands-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="brand-title mb-5">
+                                <h5 class="h5-title">Trusted by 50+ companies</h5>
+                            </div>
+                            <div class="brands-row">
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b1.png" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b2.png" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b3.png" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b4.png" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-sec section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sec-title text-center mb-5">
+                                <p class="sec-sub-title mb-3">About Us</p>
+                                <h2 class="h2-title">Discover our <span>restaurant story</span></h2>
+                                <div class="sec-title-shape mb-4">
+                                    <img src="assets/images/title-shape.svg" alt="">
+                                </div>
+                                <p>Since 1976, Krishna Cuisine has been a cherished spot for homely Indian vegetarian meals. Started as a small eatery by a loving mother, it quickly became a favorite for its authentic flavors and warm hospitality. Generations have savored its simple yet soulful dishes, prepared with traditional recipes and fresh ingredients. Over the years, it has grown, but its essence of love and purity remains unchanged. Even today, every meal served carries the taste of tradition and the warmth of home.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="about-video">
+                                <div class="about-video-img" style="background-image: url(assets/images/about.jpg);">
+                                </div>
+                                <div class="play-btn-wp">
+                                    <a href="assets/images/video.mp4" data-fancybox="video" class="play-btn">
+                                        <i class="uil uil-play"></i>
+                                    </a>
+                                    <span>Watch The Recipe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="background-image: url(assets/images/menu-bg.png);"
+                class="our-menu section bg-light repeat-img" id="menu">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">our menu</p>
+                                    <h2 class="h2-title">wake up early, <span>eat fresh & healthy</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                    <div class="text-center mb-4">
+                                        <a href="menu-page.html" class="sec-btn primary-btn">View Detailed Menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-tab-wp">
+                            <div class="row">
+                                <div class="col-lg-12 m-auto">
+                                    <div class="menu-tab text-center">
+                                        <ul class="filters">
+                                            <div class="filter-active"></div>
+                                            <li class="filter" data-filter=".all, .breakfast, .lunch, .dinner">
+                                                <img src="assets/images/menu-1.png" alt="">
+                                                All
+                                            </li>
+                                            <li class="filter" data-filter=".breakfast">
+                                                <img src="assets/images/menu-2.png" alt="">
+                                                Breakfast
+                                            </li>
+                                            <li class="filter" data-filter=".lunch">
+                                                <img src="assets/images/menu-3.png" alt="">
+                                                Lunch
+                                            </li>
+                                            <li class="filter" data-filter=".dinner">
+                                                <img src="assets/images/menu-4.png" alt="">
+                                                Dinner
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dietary-filters">
+                                        <h4>Dietary Preferences:</h4>
+                                        <div class="dietary-buttons">
+                                            <button class="dietary-btn active" data-diet="all">All</button>
+                                            <button class="dietary-btn" data-diet="veg">🟢 Vegetarian</button>
+                                            <button class="dietary-btn" data-diet="non-veg">🔴 Non-Veg</button>
+                                            <button class="dietary-btn" data-diet="vegan">🌱 Vegan</button>
+                                            <button class="dietary-btn" data-diet="jain">🙏 Jain</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-list-row">
+                            <div class="row g-xxl-5 bydefault_show" id="menu-dish">
+                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                    <div class="dish-box text-center" data-dish='{"name":"Masala Poha","price":129,"category":"breakfast","veg":true}'>
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/1.png" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-tags">
+                                            <span class="tag veg-tag">🟢 Veg</span>
+                                            <span class="tag spice-tag" title="Mild">🌶️</span>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Masala Poha</h3>
+                                            <p>220 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>1</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b class="dish-price">Rs. 129</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn" data-action="add-to-cart">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/2.png" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4.3
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Paneer Paratha & Curd</h3>
+                                            <p>350 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>1</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 149</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/3.png" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Paneer Butter Masala & Naan</h3>
+                                            <p>420 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 279</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/4.png" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4.5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Chicken Biryani</h3>
+                                            <p>480 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Non Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 299</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/5.png" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Tandoori Chicken Platter</h3>
+                                            <p>530 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Non Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 349</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/6.png" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Dal Tadka & Jeera Rice</h3>
+                                            <p>390 calories</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Veg</b>
+                                                </li>
+                                                <li>
+                                                    <p>Persons</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 229</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="two-col-sec section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="sec-img mt-5">
+                                <img src="assets/images/pizza.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="sec-text">
+                                <h2 class="xxl-title">Signature Chicken Curry</h2>
+                                <p>Experience our signature chicken curry, a perfect blend of aromatic spices and tender meat. Slow-cooked to perfection, this dish represents the authentic flavors of Indian cuisine. Each bite is a journey through traditional cooking methods and carefully selected ingredients.</p>
+                                <p>Served with your choice of freshly baked naan bread or steamed rice, making it a complete and satisfying meal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="two-col-sec section pt-0">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <div class="sec-text">
+                                <h2 class="xxl-title">Vegetarian Thali</h2>
+                                <p>Our vegetarian thali is a complete meal featuring a variety of dishes that represent the diverse flavors of Indian cuisine. Each thali includes dal, seasonal vegetables, rice, roti, and traditional accompaniments.</p>
+                                <p>Perfect for those who want to experience multiple dishes in one serving, our thali offers a balanced and nutritious meal option.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1">
+                            <div class="sec-img">
+                                <img src="assets/images/sushi.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="book-table section bg-light">
+                <div class="book-table-shape">
+                    <img src="assets/images/table-leaves-shape.png" alt="">
+                </div>
+
+                <div class="book-table-shape book-table-shape2">
+                    <img src="assets/images/table-leaves-shape.png" alt="">
+                </div>
+
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Book Table</p>
+                                    <h2 class="h2-title">Opening Table</h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-table-info">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="table-title text-center">
+                                        <h3>Monday to Thrusday</h3>
+                                        <p>9:00 am - 22:00 pm</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="call-now text-center">
+                                        <i class="uil uil-phone"></i>
+                                        <a href="tel:+91-8866998866">+91 - 8866998866</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="table-title text-center">
+                                        <h3>Friday to Sunday</h3>
+                                        <p>11::00 am to 20:00 pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="gallery">
+                            <div class="col-lg-10 m-auto">
+                                <div class="book-table-img-slider" id="icon">
+                                    <div class="swiper-wrapper">
+                                        <a href="assets/images/bt1.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt1.jpg)"></a>
+                                        <a href="assets/images/bt2.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt2.jpg)"></a>
+                                        <a href="assets/images/bt3.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt3.jpg)"></a>
+                                        <a href="assets/images/bt4.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt4.jpg)"></a>
+                                        <a href="assets/images/bt1.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt1.jpg)"></a>
+                                        <a href="assets/images/bt2.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt2.jpg)"></a>
+                                        <a href="assets/images/bt3.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt3.jpg)"></a>
+                                        <a href="assets/images/bt4.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt4.jpg)"></a>
+                                    </div>
+
+                                    <div class="swiper-button-wp">
+                                        <div class="swiper-button-prev swiper-button">
+                                            <i class="uil uil-angle-left"></i>
+                                        </div>
+                                        <div class="swiper-button-next swiper-button">
+                                            <i class="uil uil-angle-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="our-team section">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Our Team</p>
+                                    <h2 class="h2-title">Meet our Chefs</h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row team-slider">
+                            <div class="swiper-wrapper">
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url(assets/images/chef/ch1.jpg);"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Nilay Hirpara</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url(assets/images/chef/ch2.jpg);"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Ravi Kumawat</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url(assets/images/chef/ch3.jpg);"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Navnit Kumar</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url(assets/images/chef/ch4.jpg);"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Pranav Badgal</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url(assets/images/chef/ch5.jpg);"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Priyotosh Singh</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-wp">
+                                <div class="swiper-button-prev swiper-button">
+                                    <i class="uil uil-angle-left"></i>
+                                </div>
+                                <div class="swiper-button-next swiper-button">
+                                    <i class="uil uil-angle-right"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials section bg-light">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">What they say</p>
+                                    <h2 class="h2-title">What our customers <span>say about us</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="testimonials-img">
+                                    <img src="assets/images/testimonial-img.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/testimonials/t1.jpg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:85%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Nilay Rathod
+                                                </h3>
+                                                <p>The food quality and service are exceptional. The authentic flavors remind me of home-cooked meals. Highly recommended!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/testimonials/t2.jpg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:80%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Raman Gupta
+                                                </h3>
+                                                <p>Great ambiance and delicious food. The staff is very friendly and attentive. Will definitely come back again!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/testimonials/t3.jpg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:89%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Priyotosh Singh
+                                                </h3>
+                                                <p>Amazing vegetarian options! The flavors are perfectly balanced, and the portion sizes are generous.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/testimonials/t4.jpg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:100%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Alex Johnson
+                                                </h3>
+                                                <p>Best Indian restaurant in the area. The thali is a must-try. Excellent value for money!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-sec section-repeat-img" style="background-image: url(assets/images/faq-bg.png);">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">faqs</p>
+                                    <h2 class="h2-title">Frequently <span>asked questions</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <div class="faq-box">
+                                <h4 class="h4-title">What are the opening hours?</h4>
+                                <p>We are open Monday to Thursday from 9:00 am to 10:00 pm, and Friday to Sunday from 11:00 am to 8:00 pm. Last orders are taken 30 minutes before closing time.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">How do I get my refund?</h4>
+                                <p>Refunds are processed within 3-5 business days. Please contact our customer service with your order details, and we'll guide you through the process.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">How long will it take for food delivery?</h4>
+                                <p>Delivery times typically range from 30-45 minutes, depending on your location and current order volume. You can track your order in real-time through our app.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">Does your restaurant serve both vegetarian and non-vegetarian food?</h4>
+                                <p>Yes, we offer an extensive menu of both vegetarian and non-vegetarian dishes. Our kitchen maintains separate cooking areas to ensure proper food handling and respect for dietary preferences.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">What is the cost of food delivery?</h4>
+                                <p>Delivery charges start at ₹30 and may vary based on distance. Free delivery is available for orders above ₹500 within a 5km radius.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">Who is eligible for premium membership?</h4>
+                                <p>Premium membership is available to customers who have placed at least 5 orders in the past 3 months. Members enjoy exclusive discounts, priority delivery, and special event invitations.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <div class="bg-pattern bg-light repeat-img"
+                style="background-image: url(assets/images/blog-pattern-bg.png);">
+                <section class="blog-sec section" id="blog">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sec-title text-center mb-5">
+                                        <p class="sec-sub-title mb-3">Our blog</p>
+                                        <h2 class="h2-title">Latest Publications</span></h2>
+                                        <div class="sec-title-shape mb-4">
+                                            <img src="assets/images/title-shape.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style="background-image: url(assets/images/blog/blog1.jpg);"></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">December 23, 2025</p>
+                                            <a href="#" class="h4-title">Healthy Energy Drinks You Can Make at Home</a>
+                                            <p>Discover natural and refreshing energy drink recipes using common kitchen ingredients. These healthy alternatives will keep you energized throughout the day.</p>
+                                            <a href="#" class="sec-btn">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style="background-image: url(assets/images/blog/blog2.jpg);"></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">December 22, 2025</p>
+                                            <a href="#" class="h4-title">Fresh Vegetable and Rice Bowl Combinations</a>
+                                            <p>Explore creative and nutritious rice bowl recipes featuring seasonal vegetables, perfect for a balanced dinner. Learn about different sauce combinations and protein options.</p>
+                                            <a href="#" class="sec-btn">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style="background-image: url(assets/images/blog/blog3.jpg);"></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">December 21, 2025</p>
+                                            <a href="#" class="h4-title">Special Vegetarian Thali: A Complete Meal Guide</a>
+                                            <p>Learn about our special thali combinations, featuring traditional Indian dishes and modern fusion elements. Perfect for those who want to experience variety in one meal.</p>
+                                            <a href="#" class="sec-btn">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="customer-reviews section bg-light">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sec-title text-center mb-5">
+                                        <p class="sec-sub-title mb-3">Customer Reviews</p>
+                                        <h2 class="h2-title">What our <span>customers say</span></h2>
+                                        <div class="sec-title-shape mb-4">
+                                            <img src="assets/images/title-shape.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="review-card">
+                                        <div class="review-rating">
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <p class="review-text">"Amazing food quality and authentic flavors! The Paneer Butter Masala is absolutely delicious. Staff is very courteous and the ambiance is perfect for family dinners."</p>
+                                        <div class="reviewer">
+                                            <img src="assets/images/testimonials/t1.png" alt="Priya Sharma" class="reviewer-img">
+                                            <div class="reviewer-info">
+                                                <h5>Priya Sharma</h5>
+                                                <span>Mumbai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="review-card">
+                                        <div class="review-rating">
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <p class="review-text">"Best Chicken Biryani in town! The spices are perfectly balanced and the chicken is tender. Great value for money and generous portions."</p>
+                                        <div class="reviewer">
+                                            <img src="assets/images/testimonials/t2.png" alt="Rahul Verma" class="reviewer-img">
+                                            <div class="reviewer-info">
+                                                <h5>Rahul Verma</h5>
+                                                <span>Delhi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="review-card">
+                                        <div class="review-rating">
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star"></i>
+                                            <i class="uil uil-star-half-alt"></i>
+                                        </div>
+                                        <p class="review-text">"Wonderful experience! The Dal Tadka reminded me of home-cooked food. Online ordering process is smooth and delivery was on time. Highly recommended!"</p>
+                                        <div class="reviewer">
+                                            <img src="assets/images/testimonials/t3.png" alt="Anjali Patel" class="reviewer-img">
+                                            <div class="reviewer-info">
+                                                <h5>Anjali Patel</h5>
+                                                <span>Ahmedabad</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="location-section section">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sec-title text-center mb-5">
+                                        <p class="sec-sub-title mb-3">Visit Us</p>
+                                        <h2 class="h2-title">Find us <span>here</span></h2>
+                                        <div class="sec-title-shape mb-4">
+                                            <img src="assets/images/title-shape.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="location-info">
+                                        <div class="info-item">
+                                            <i class="uil uil-location-point"></i>
+                                            <div>
+                                                <h4>Address</h4>
+                                                <p>123 Spice Street, Gandhi Nagar<br>Mumbai, Maharashtra 400001</p>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <i class="uil uil-phone"></i>
+                                            <div>
+                                                <h4>Phone</h4>
+                                                <p>+91 - 8866998866<br>+91 - 9876543210</p>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <i class="uil uil-envelope"></i>
+                                            <div>
+                                                <h4>Email</h4>
+                                                <p>info@spiceroute.com<br>reservations@spiceroute.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <i class="uil uil-clock"></i>
+                                            <div>
+                                                <h4>Opening Hours</h4>
+                                                <p>Mon-Thu: 9:00 AM - 10:00 PM<br>Fri-Sun: 11:00 AM - 11:00 PM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="map-container">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9436418068634!2d72.8310473!3d19.0144618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAwJzUyLjEiTiA3MsKwNDknNTEuOCJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                                                width="100%" 
+                                                height="400" 
+                                                style="border:0; border-radius: 15px;" 
+                                                allowfullscreen="" 
+                                                loading="lazy">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="newsletter-sec section pt-0">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 m-auto">
+                                    <div class="newsletter-box text-center back-img white-text"
+                                        style="background-image: url(assets/images/news.jpg);">
+                                        <div class="bg-overlay dark-overlay"></div>
+                                        <div class="sec-wp">
+                                            <div class="newsletter-box-text">
+                                                <h2 class="h2-title">Subscribe to our newsletter</h2>
+                                                <p>Stay updated with our latest menu items, special offers, and upcoming events. Join our food community today!</p>
+                                            </div>
+                                            <form action="#" class="newsletter-form">
+                                                <input type="email" class="form-input"
+                                                    placeholder="Enter your Email Here" required>
+                                                <button type="submit" class="sec-btn primary-btn">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- footer starts  -->
+            <footer class="site-footer" id="contact">
+                <div class="top-footer section">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="footer-info">
+                                        <div class="footer-logo">
+                                            <a href="index.html">
+                                                <img src="logo.png1.png" class="brand-logo" alt="Krishna Cuisine Logo">
+                                            </a>
+                                        </div>
+                                        <p>Serving authentic Indian vegetarian cuisine since 1976. Experience the taste of tradition with our carefully crafted dishes.</p>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-github-alt"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="footer-flex-box">
+                                        <div class="footer-table-info">
+                                            <h3 class="h3-title">open hours</h3>
+                                            <ul>
+                                                <li><i class="uil uil-clock"></i> Mon-Thurs : 9am - 22pm</li>
+                                                <li><i class="uil uil-clock"></i> Fri-Sun : 11am - 22pm</li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu food-nav-menu">
+                                            <h3 class="h3-title">Links</h3>
+                                            <ul class="column-2">
+                                                <li>
+                                                    <a href="#home" class="footer-active-menu">Home</a>
+                                                </li>
+                                                <li><a href="#about">About</a></li>
+                                                <li><a href="#menu">Menu</a></li>
+                                                <li><a href="#gallery">Gallery</a></li>
+                                                <li><a href="#blog">Blog</a></li>
+                                                <li><a href="#contact">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu">
+                                            <h3 class="h3-title">Company</h3>
+                                            <ul>
+                                                <li><a href="#">Terms & Conditions</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Cookie Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2025 <span class="name">Krishna Cuisine.</span> All Rights Reserved. | Designed with ❤️ by Mayank Kumar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scrolltop"><i class="uil uil-angle-up"></i></button>
+                    </div>
+                </div>
+            </footer>
+
+
+
+        </div>
+    </div>
+
+    <!-- Menu Modal -->
+    <div class="menu-modal" id="menuModal">
+        <div class="menu-modal-content">
+            <span class="menu-close">&times;</span>
+            <div class="menu-loading">Loading menu...</div>
+            <img src="menu.jpg" alt="Krishna Cuisine Menu" class="menu-image" id="menuImg">
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h3>Your Order</h3>
+                <span class="cart-close">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">₹0</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reservation Modal -->
+    <div class="reservation-modal" id="reservationModal">
+        <div class="reservation-modal-content">
+            <span class="reservation-close">&times;</span>
+            <h3>Book a Table</h3>
+            <form id="reservationForm" class="reservation-form">
+                <div class="form-group">
+                    <label for="resName">Full Name</label>
+                    <input type="text" id="resName" required>
+                </div>
+                <div class="form-group">
+                    <label for="resPhone">Phone Number</label>
+                    <input type="tel" id="resPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="resDate">Date</label>
+                    <input type="date" id="resDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="resTime">Time</label>
+                    <input type="time" id="resTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="resGuests">Number of Guests</label>
+                    <select id="resGuests" required>
+                        <option value="">Select guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6+ Guests</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resNotes">Special Requests (Optional)</label>
+                    <textarea id="resNotes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="reservation-submit-btn">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918866998866?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20restaurant" 
+       class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="uil uil-whatsapp"></i>
+    </a>
+
+    <!-- Language Toggle Floating Button -->
+    <button class="language-toggle" id="languageToggle" title="Switch Language">
+        <span class="lang-text">EN</span>
+    </button>
+
+    <!-- jquery  -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!-- fontawesome  -->
+    <script src="assets/js/font-awesome.min.js"></script>
+
+    <!-- swiper slider  -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- mixitup -- filter  -->
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+
+    <!-- fancy box  -->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+
+    <!-- parallax  -->
+    <script src="assets/js/parallax.min.js"></script>
+
+    <!-- gsap  -->
+    <script src="assets/js/gsap.min.js"></script>
+
+    <!-- scroll trigger  -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!-- scroll to plugin  -->
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <!-- rellax  -->
+    <!-- <script src="assets/js/rellax.min.js"></script> -->
+    <!-- <script src="assets/js/rellax-custom.js"></script> -->
+    <!-- smooth scroll  -->
+    <script src="assets/js/smooth-scroll.js"></script>
+    <!-- custom js  -->
+    <script src="main.js"></script>
+    <!--chatbot-->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Global Cuisine - AI Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Chatbot Button - Enhanced */
+        .chatbot-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 50%, #FEE140 100%);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 32px rgba(255, 107, 107, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 8px 32px rgba(255, 107, 107, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 40px rgba(255, 107, 107, 0.6), 
+                            0 0 0 10px rgba(255, 107, 107, 0.1),
+                            0 0 0 20px rgba(255, 107, 107, 0.05);
+            }
+        }
+
+        .chatbot-button:hover {
+            transform: scale(1.15) rotate(10deg);
+            box-shadow: 0 12px 48px rgba(255, 107, 107, 0.6);
+        }
+
+        .chatbot-button.active {
+            transform: rotate(90deg);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .chatbot-button svg {
+            width: 36px;
+            height: 36px;
+            fill: white;
+            transition: all 0.3s ease;
+        }
+
+        .chatbot-button.active svg.chat-icon {
+            display: none;
+        }
+
+        .chatbot-button svg.close-icon {
+            display: none;
+        }
+
+        .chatbot-button.active svg.close-icon {
+            display: block;
+            transform: rotate(180deg);
+        }
+
+        /* Notification Badge */
+        .chat-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #FF4757;
+            color: white;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            border: 3px solid white;
+            animation: bounceIn 0.6s;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Chatbot Container - Premium Design */
+        .chatbot-container {
+            position: fixed;
+            bottom: 115px;
+            right: 30px;
+            width: 450px;
+            height: 720px;
+            background: linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%);
+            border-radius: 28px;
+            box-shadow: 0 20px 80px rgba(0, 0, 0, 0.25),
+                        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 999;
+            animation: slideUpFade 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .chatbot-container.active {
+            display: flex;
+        }
+
+        @keyframes slideUpFade {
+            from {
+                opacity: 0;
+                transform: translateY(40px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Chatbot Header - Gradient with Glassmorphism */
+        .chatbot-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 28px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chatbot-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .chatbot-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FFD93D 0%, #FF6B6B 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .chatbot-header-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .chatbot-header-text h3 {
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .chatbot-header-text p {
+            font-size: 13px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            background: #4ade80;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+            animation: blink 2s infinite;
+            box-shadow: 0 0 10px #4ade80;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Filter Pills - Modern Design */
+        .filter-pills {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 16px;
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .filter-pills::-webkit-scrollbar {
+            height: 0;
+        }
+
+        .filter-pill {
+            padding: 10px 18px;
+            border-radius: 24px;
+            background: white;
+            border: 2px solid #e5e7eb;
+            font-size: 13px;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            color: #374151;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .filter-pill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .filter-pill.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: transparent;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Messages Area - Enhanced */
+        .chatbot-messages {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+            background: linear-gradient(180deg, #fafbff 0%, #ffffff 100%);
+        }
+
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            animation: messageSlide 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes messageSlide {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.bot {
+            justify-content: flex-start;
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-right: 12px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .message.user .message-avatar {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+            margin-right: 0;
+            margin-left: 12px;
+            order: 2;
+        }
+
+        .message-content {
+            max-width: 75%;
+            padding: 16px 20px;
+            border-radius: 22px;
+            font-size: 14px;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .message.bot .message-content {
+            background: white;
+            color: #1f2937;
+            border-bottom-left-radius: 6px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .message.user .message-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-bottom-right-radius: 6px;
+            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Dish Cards - Premium Style */
+        .dish-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dish-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, #FF6B6B 0%, #667eea 100%);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .dish-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .dish-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .dish-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 12px;
+        }
+
+        .dish-name-wrapper {
+            flex: 1;
+        }
+
+        .dish-name {
+            font-weight: 700;
+            font-size: 17px;
+            color: #111827;
+            margin-bottom: 6px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .dish-cuisine {
+            font-size: 11px;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            display: inline-block;
+            padding: 4px 10px;
+            background: #f3f4f6;
+            border-radius: 12px;
+        }
+
+        .dish-price {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+            color: white;
+            font-weight: 800;
+            font-size: 17px;
+            padding: 8px 16px;
+            border-radius: 16px;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+        }
+
+        .dish-description {
+            font-size: 13px;
+            color: #4b5563;
+            margin: 12px 0;
+            line-height: 1.6;
+        }
+
+        .dish-info {
+            font-size: 12px;
+            color: #6b7280;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .info-badge {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            background: #f9fafb;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        .dish-ingredients {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 2px dashed #e5e7eb;
+        }
+
+        .ingredients-label {
+            font-size: 11px;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .ingredient-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .ingredient-tag {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 12px;
+            color: #92400e;
+            font-weight: 600;
+            border: 1px solid #fbbf24;
+            box-shadow: 0 2px 4px rgba(251, 191, 36, 0.2);
+        }
+
+        .dish-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .dish-tag {
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 11px;
+            color: #6b21a8;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Quick Suggestions - Enhanced */
+        .quick-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .suggestion-chip {
+            background: white;
+            border: 2px solid #e5e7eb;
+            padding: 12px 20px;
+            border-radius: 24px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            color: #374151;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .suggestion-chip::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+            z-index: -1;
+        }
+
+        .suggestion-chip:hover {
+            color: white;
+            border-color: transparent;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+        }
+
+        .suggestion-chip:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Input Area - Modern */
+        .chatbot-input {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+            display: flex;
+            gap: 12px;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 16px 24px;
+            border: 2px solid #e5e7eb;
+            border-radius: 30px;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .chatbot-input input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1),
+                        0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .chatbot-input input::placeholder {
+            color: #9ca3af;
+        }
+
+        .send-button {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+            position: relative;
+        }
+
+        .send-button::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .send-button:hover:not(:disabled) {
+            transform: scale(1.1) rotate(15deg);
+            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.6);
+        }
+
+        .send-button:active:not(:disabled) {
+            transform: scale(0.95);
+        }
+
+        .send-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .send-button svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Typing Indicator - Animated */
+        .typing-indicator {
+            display: flex;
+            gap: 6px;
+            padding: 16px 20px;
+        }
+
+        .typing-indicator span {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            animation: typing 1.4s infinite ease-in-out;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+            0%, 60%, 100% {
+                transform: translateY(0) scale(1);
+                opacity: 0.7;
+            }
+            30% {
+                transform: translateY(-15px) scale(1.2);
+                opacity: 1;
+            }
+        }
+
+        /* Scrollbar - Custom */
+        .chatbot-messages::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .chatbot-messages::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .chatbot-messages::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+        }
+
+        .chatbot-messages::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #764ba2 0%, #667eea 100%);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 480px) {
+            .chatbot-container {
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                right: 0;
+                border-radius: 0;
+            }
+
+            .chatbot-button {
+                bottom: 20px;
+                right: 20px;
+                width: 64px;
+                height: 64px;
+            }
+
+            .filter-pills {
+                padding: 12px;
+            }
+
+            .dish-card {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Chatbot Button -->
+    <button class="chatbot-button" id="chatbotToggle">
+        <div class="chat-badge">AI</div>
+        <svg class="chat-icon" viewBox="0 0 24 24">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+        </svg>
+        <svg class="close-icon" viewBox="0 0 24 24">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+    </button>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-avatar">🌍</div>
+            <div class="chatbot-header-text">
+                <h3>Krishna Global Cuisine</h3>
+                <p><span class="status-indicator"></span>AI Assistant Online</p>
+            </div>
+        </div>
+
+        <!-- Cuisine Filters -->
+        <div class="filter-pills" id="filterPills">
+            <div class="filter-pill active" data-cuisine="all">🌍 All Cuisines</div>
+            <div class="filter-pill" data-cuisine="Indian">🇮🇳 Indian</div>
+            <div class="filter-pill" data-cuisine="American">🇺🇸 American</div>
+            <div class="filter-pill" data-cuisine="Italian">🇮🇹 Italian</div>
+            <div class="filter-pill" data-cuisine="French">🇫🇷 French</div>
+            <div class="filter-pill" data-cuisine="British">🇬🇧 British</div>
+        </div>
+
+        <div class="chatbot-messages" id="chatMessages">
+            <!-- Messages will appear here -->
+        </div>
+
+        <div class="chatbot-input">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Search by cuisine, ingredient, or mood..."
+                autocomplete="off"
+            />
+            <button class="send-button" id="sendButton">
+                <svg viewBox="0 0 24 24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Complete Global Menu Data with Indian, American, and European Dishes
+        const menuData = [
+            // INDIAN CUISINE
+            {
+                name: "Masala Poha",
+                price: 129,
+                cuisine: "Indian",
+                type: "Veg",
+                category: "Breakfast",
+                calories: 220,
+                rating: 5,
+                tags: ["spicy", "light", "traditional", "rice"],
+                ingredients: ["flattened rice", "peanuts", "curry leaves", "turmeric", "mustard seeds", "green chilies", "onions"],
+                spiceLevel: "medium",
+                description: "Traditional Indian breakfast dish made with flattened rice, aromatic spices, and crunchy peanuts. Light yet filling!"
+            },
+            {
+                name: "Paneer Butter Masala",
+                price: 279,
+                cuisine: "Indian",
+                type: "Veg",
+                category: "Main Course",
+                calories: 420,
+                rating: 4.8,
+                tags: ["paneer", "gravy", "creamy", "rich", "popular"],
+                ingredients: ["cottage cheese", "tomatoes", "butter", "cream", "cashews", "garam masala", "fenugreek"],
+                spiceLevel: "mild",
+                description: "Soft paneer cubes swimming in a rich, creamy tomato gravy with butter. An absolute crowd favorite!"
+            },
+            {
+                name: "Chicken Biryani",
+                price: 299,
+                cuisine: "Indian",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 480,
+                rating: 4.9,
+                tags: ["spicy", "aromatic", "rice", "chicken", "biryani"],
+                ingredients: ["basmati rice", "chicken", "yogurt", "biryani spices", "saffron", "fried onions", "mint"],
+                spiceLevel: "high",
+                description: "Aromatic basmati rice layered with tender marinated chicken. A royal feast in every bite!"
+            },
+            {
+                name: "Tandoori Chicken",
+                price: 349,
+                cuisine: "Indian",
+                type: "Non-Veg",
+                category: "Appetizer",
+                calories: 530,
+                rating: 5,
+                tags: ["spicy", "grilled", "smoky", "protein", "tandoor"],
+                ingredients: ["chicken", "yogurt", "tandoori masala", "lemon", "ginger-garlic paste", "kashmiri chili"],
+                spiceLevel: "high",
+                description: "Succulent chicken marinated in yogurt and spices, grilled to perfection in a traditional clay oven."
+            },
+            {
+                name: "Dal Makhani",
+                price: 249,
+                cuisine: "Indian",
+                type: "Veg",
+                category: "Main Course",
+                calories: 350,
+                rating: 4.7,
+                tags: ["dal", "creamy", "comfort", "rich", "traditional"],
+                ingredients: ["black lentils", "kidney beans", "butter", "cream", "tomatoes", "ginger", "garlic"],
+                spiceLevel: "mild",
+                description: "Slow-cooked black lentils and kidney beans in a creamy, buttery tomato sauce. Pure comfort food!"
+            },
+            {
+                name: "Samosa",
+                price: 89,
+                cuisine: "Indian",
+                type: "Veg",
+                category: "Snacks",
+                calories: 250,
+                rating: 4.6,
+                tags: ["crispy", "fried", "potato", "snack", "popular"],
+                ingredients: ["potatoes", "peas", "wheat flour", "cumin", "coriander", "garam masala", "chili"],
+                spiceLevel: "medium",
+                description: "Crispy golden triangular pastries filled with spiced potato and peas. Perfect tea-time snack!"
+            },
+
+            // AMERICAN CUISINE
+            {
+                name: "Classic Cheeseburger",
+                price: 329,
+                cuisine: "American",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 650,
+                rating: 4.7,
+                tags: ["burger", "cheese", "beef", "comfort", "classic"],
+                ingredients: ["beef patty", "cheddar cheese", "lettuce", "tomato", "onions", "pickles", "burger bun", "special sauce"],
+                spiceLevel: "mild",
+                description: "Juicy beef patty topped with melted cheddar, fresh veggies, and our special sauce. An American classic!"
+            },
+            {
+                name: "BBQ Ribs",
+                price: 549,
+                cuisine: "American",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 780,
+                rating: 4.9,
+                tags: ["bbq", "ribs", "smoky", "tender", "grilled"],
+                ingredients: ["pork ribs", "BBQ sauce", "brown sugar", "paprika", "garlic powder", "coleslaw", "cornbread"],
+                spiceLevel: "medium",
+                description: "Fall-off-the-bone tender ribs slathered in tangy BBQ sauce. Finger-licking good!"
+            },
+            {
+                name: "Buffalo Wings",
+                price: 379,
+                cuisine: "American",
+                type: "Non-Veg",
+                category: "Appetizer",
+                calories: 520,
+                rating: 4.6,
+                tags: ["spicy", "wings", "chicken", "crispy", "tangy"],
+                ingredients: ["chicken wings", "hot sauce", "butter", "celery", "blue cheese dressing", "cayenne pepper"],
+                spiceLevel: "high",
+                description: "Crispy chicken wings tossed in spicy buffalo sauce, served with cool blue cheese dip!"
+            },
+            {
+                name: "Mac and Cheese",
+                price: 249,
+                cuisine: "American",
+                type: "Veg",
+                category: "Sides",
+                calories: 420,
+                rating: 4.8,
+                tags: ["cheese", "pasta", "creamy", "comfort", "rich"],
+                ingredients: ["elbow macaroni", "cheddar cheese", "cream", "butter", "parmesan", "breadcrumbs"],
+                spiceLevel: "none",
+                description: "Creamy, cheesy macaroni baked to golden perfection. Ultimate comfort food!"
+            },
+            {
+                name: "Philly Cheesesteak",
+                price: 369,
+                cuisine: "American",
+                type: "Non-Veg",
+                category: "Sandwiches",
+                calories: 590,
+                rating: 4.5,
+                tags: ["sandwich", "cheese", "beef", "filling", "savory"],
+                ingredients: ["ribeye steak", "provolone cheese", "onions", "bell peppers", "hoagie roll", "mushrooms"],
+                spiceLevel: "mild",
+                description: "Thinly sliced ribeye steak with melted provolone and sautéed peppers on a fresh hoagie roll."
+            },
+            {
+                name: "Clam Chowder",
+                price: 299,
+                cuisine: "American",
+                type: "Non-Veg",
+                category: "Soup",
+                calories: 380,
+                rating: 4.4,
+                tags: ["soup", "creamy", "seafood", "warm", "comfort"],
+                ingredients: ["clams", "potatoes", "cream", "bacon", "onions", "celery", "thyme"],
+                spiceLevel: "none",
+                description: "Rich and creamy New England-style clam chowder with tender clams and potatoes."
+            },
+
+            // ITALIAN CUISINE
+            {
+                name: "Margherita Pizza",
+                price: 399,
+                cuisine: "Italian",
+                type: "Veg",
+                category: "Main Course",
+                calories: 580,
+                rating: 4.9,
+                tags: ["pizza", "cheese", "tomato", "classic", "italian"],
+                ingredients: ["pizza dough", "mozzarella cheese", "tomato sauce", "fresh basil", "olive oil", "garlic"],
+                spiceLevel: "none",
+                description: "Classic Italian pizza with fresh mozzarella, tomato sauce, and basil. Simple perfection!"
+            },
+            {
+                name: "Fettuccine Alfredo",
+                price: 349,
+                cuisine: "Italian",
+                type: "Veg",
+                category: "Main Course",
+                calories: 620,
+                rating: 4.7,
+                tags: ["pasta", "creamy", "cheese", "rich", "classic"],
+                ingredients: ["fettuccine pasta", "heavy cream", "parmesan cheese", "butter", "garlic", "black pepper"],
+                spiceLevel: "none",
+                description: "Silky fettuccine pasta tossed in a rich, creamy parmesan sauce. Decadently delicious!"
+            },
+            {
+                name: "Chicken Parmigiana",
+                price: 429,
+                cuisine: "Italian",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 710,
+                rating: 4.8,
+                tags: ["chicken", "cheese", "fried", "tomato", "italian"],
+                ingredients: ["chicken breast", "breadcrumbs", "mozzarella", "parmesan", "marinara sauce", "basil"],
+                spiceLevel: "mild",
+                description: "Breaded chicken cutlet topped with marinara and melted cheese. Italian-American classic!"
+            },
+            {
+                name: "Tiramisu",
+                price: 229,
+                cuisine: "Italian",
+                type: "Veg",
+                category: "Dessert",
+                calories: 450,
+                rating: 5,
+                tags: ["dessert", "coffee", "sweet", "creamy", "classic"],
+                ingredients: ["ladyfinger cookies", "mascarpone cheese", "espresso", "cocoa powder", "eggs", "sugar"],
+                spiceLevel: "none",
+                description: "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream."
+            },
+            {
+                name: "Lasagna",
+                price: 449,
+                cuisine: "Italian",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 680,
+                rating: 4.6,
+                tags: ["pasta", "cheese", "beef", "baked", "layered"],
+                ingredients: ["lasagna sheets", "ground beef", "ricotta", "mozzarella", "marinara sauce", "parmesan"],
+                spiceLevel: "mild",
+                description: "Layers of pasta, meat sauce, and cheese baked to perfection. A hearty Italian favorite!"
+            },
+            {
+                name: "Bruschetta",
+                price: 199,
+                cuisine: "Italian",
+                type: "Veg",
+                category: "Appetizer",
+                calories: 180,
+                rating: 4.5,
+                tags: ["bread", "tomato", "garlic", "fresh", "light"],
+                ingredients: ["bread", "tomatoes", "garlic", "basil", "olive oil", "balsamic vinegar", "mozzarella"],
+                spiceLevel: "none",
+                description: "Toasted bread topped with fresh tomatoes, garlic, and basil. Simple and delicious!"
+            },
+
+            // FRENCH CUISINE
+            {
+                name: "Croissant",
+                price: 149,
+                cuisine: "French",
+                type: "Veg",
+                category: "Breakfast",
+                calories: 280,
+                rating: 4.9,
+                tags: ["pastry", "buttery", "flaky", "breakfast", "classic"],
+                ingredients: ["flour", "butter", "yeast", "milk", "sugar", "salt"],
+                spiceLevel: "none",
+                description: "Flaky, buttery French pastry with delicate layers. Perfect for breakfast!"
+            },
+            {
+                name: "Coq au Vin",
+                price: 549,
+                cuisine: "French",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 620,
+                rating: 4.8,
+                tags: ["chicken", "wine", "stew", "rich", "classic"],
+                ingredients: ["chicken", "red wine", "bacon", "mushrooms", "pearl onions", "carrots", "thyme"],
+                spiceLevel: "mild",
+                description: "Classic French chicken braised in red wine with mushrooms and bacon. Elegant and hearty!"
+            },
+            {
+                name: "French Onion Soup",
+                price: 279,
+                cuisine: "French",
+                type: "Veg",
+                category: "Soup",
+                calories: 350,
+                rating: 4.7,
+                tags: ["soup", "onion", "cheese", "warm", "comfort"],
+                ingredients: ["onions", "beef broth", "gruyere cheese", "bread", "butter", "thyme", "wine"],
+                spiceLevel: "none",
+                description: "Rich onion soup topped with melted Gruyère cheese and toasted bread. French bistro classic!"
+            },
+            {
+                name: "Crème Brûlée",
+                price: 249,
+                cuisine: "French",
+                type: "Veg",
+                category: "Dessert",
+                calories: 320,
+                rating: 5,
+                tags: ["dessert", "sweet", "creamy", "caramel", "elegant"],
+                ingredients: ["cream", "egg yolks", "sugar", "vanilla bean"],
+                spiceLevel: "none",
+                description: "Silky vanilla custard with a caramelized sugar crust. Crack the top for a perfect bite!"
+            },
+            {
+                name: "Ratatouille",
+                price: 329,
+                cuisine: "French",
+                type: "Veg",
+                category: "Main Course",
+                calories: 220,
+                rating: 4.6,
+                tags: ["vegetables", "healthy", "colorful", "stew", "light"],
+                ingredients: ["eggplant", "zucchini", "bell peppers", "tomatoes", "onions", "garlic", "herbs"],
+                spiceLevel: "mild",
+                description: "Beautiful vegetable stew from Provence. Healthy, colorful, and delicious!"
+            },
+
+            // BRITISH CUISINE
+            {
+                name: "Fish and Chips",
+                price: 379,
+                cuisine: "British",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 720,
+                rating: 4.7,
+                tags: ["fish", "fried", "crispy", "classic", "comfort"],
+                ingredients: ["cod fish", "potatoes", "batter", "flour", "beer", "peas", "tartar sauce"],
+                spiceLevel: "none",
+                description: "Crispy battered fish with golden chips. A British pub classic!"
+            },
+            {
+                name: "Shepherd's Pie",
+                price: 399,
+                cuisine: "British",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 580,
+                rating: 4.6,
+                tags: ["meat", "potato", "baked", "comfort", "hearty"],
+                ingredients: ["ground lamb", "mashed potatoes", "peas", "carrots", "onions", "gravy", "butter"],
+                spiceLevel: "mild",
+                description: "Savory lamb and vegetables topped with creamy mashed potatoes. Ultimate comfort food!"
+            },
+            {
+                name: "Full English Breakfast",
+                price: 449,
+                cuisine: "British",
+                type: "Non-Veg",
+                category: "Breakfast",
+                calories: 850,
+                rating: 4.8,
+                tags: ["breakfast", "hearty", "filling", "traditional", "complete"],
+                ingredients: ["eggs", "bacon", "sausage", "baked beans", "mushrooms", "tomatoes", "toast", "black pudding"],
+                spiceLevel: "none",
+                description: "The ultimate breakfast platter with eggs, bacon, sausage, and all the trimmings!"
+            },
+            {
+                name: "Beef Wellington",
+                price: 699,
+                cuisine: "British",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 780,
+                rating: 5,
+                tags: ["beef", "pastry", "elegant", "fancy", "gourmet"],
+                ingredients: ["beef tenderloin", "puff pastry", "mushroom duxelles", "prosciutto", "egg wash", "thyme"],
+                spiceLevel: "mild",
+                description: "Tender beef wrapped in mushroom duxelles and golden puff pastry. A showstopping dish!"
+            },
+            {
+                name: "Sticky Toffee Pudding",
+                price: 229,
+                cuisine: "British",
+                type: "Veg",
+                category: "Dessert",
+                calories: 480,
+                rating: 4.9,
+                tags: ["dessert", "sweet", "warm", "caramel", "rich"],
+                ingredients: ["dates", "flour", "sugar", "butter", "cream", "toffee sauce", "vanilla"],
+                spiceLevel: "none",
+                description: "Moist date cake drenched in warm toffee sauce. Indulgently delicious!"
+            },
+            {
+                name: "Chicken Tikka Masala",
+                price: 349,
+                cuisine: "British",
+                type: "Non-Veg",
+                category: "Main Course",
+                calories: 520,
+                rating: 4.7,
+                tags: ["chicken", "curry", "creamy", "spicy", "popular"],
+                ingredients: ["chicken", "tomatoes", "cream", "tikka spices", "yogurt", "garam masala", "butter"],
+                spiceLevel: "medium",
+                description: "Britain's favorite curry! Tender chicken in a creamy, spiced tomato sauce."
+            }
+        ];
+
+        // Chat Elements
+        const chatbotToggle = document.getElementById('chatbotToggle');
+        const chatbotContainer = document.getElementById('chatbotContainer');
+        const chatMessages = document.getElementById('chatMessages');
+        const userInput = document.getElementById('userInput');
+        const sendButton = document.getElementById('sendButton');
+        const filterPills = document.querySelectorAll('.filter-pill');
+
+        let currentFilter = 'all';
+
+        // Toggle Chatbot
+        chatbotToggle.addEventListener('click', () => {
+            chatbotToggle.classList.toggle('active');
+            chatbotContainer.classList.toggle('active');
+            
+            if (chatbotContainer.classList.contains('active') && chatMessages.children.length === 0) {
+                initializeChat();
+            }
+        });
+
+        // Initialize Chat
+        function initializeChat() {
+            addBotMessage("🌟 Welcome to Krishna Global Cuisine! I'm your AI food assistant.");
+            
+            setTimeout(() => {
+                addBotMessage("I can help you discover amazing dishes from around the world! Try asking me:");
+                const suggestions = createQuickSuggestions([
+                    "🌶️ Something spicy",
+                    "🧀 Cheesy comfort food",
+                    "🥗 Healthy options",
+                    "🍰 Sweet desserts"
+                ]);
+                addBotMessage(suggestions, true);
+            }, 800);
+        }
+
+        // Filter Pills
+        filterPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                filterPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                currentFilter = pill.dataset.cuisine;
+                
+                const cuisine = pill.dataset.cuisine === 'all' ? 'all cuisines' : pill.dataset.cuisine + ' cuisine';
+                addUserMessage(`Show me ${cuisine}`);
+                filterByCuisine(pill.dataset.cuisine);
+            });
+        });
+
+        // Filter by Cuisine
+        function filterByCuisine(cuisine) {
+            showTypingIndicator();
+            
+            setTimeout(() => {
+                removeTypingIndicator();
+                
+                let results = cuisine === 'all' ? menuData : menuData.filter(d => d.cuisine === cuisine);
+                
+                const cuisineEmoji = {
+                    'all': '🌍',
+                    'Indian': '🇮🇳',
+                    'American': '🇺🇸',
+                    'Italian': '🇮🇹',
+                    'French': '🇫🇷',
+                    'British': '🇬🇧'
+                };
+                
+                addBotMessage(`${cuisineEmoji[cuisine]} Found ${results.length} amazing ${cuisine === 'all' ? 'dishes' : cuisine + ' dishes'}!`);
+                
+                // Show first 6 dishes
+                results.slice(0, 6).forEach((dish, index) => {
+                    setTimeout(() => {
+                        const card = createDishCard(dish);
+                        addBotMessage(card, true);
+                    }, index * 250);
+                });
+                
+                setTimeout(() => {
+                    if (results.length > 6) {
+                        addBotMessage(`And ${results.length - 6} more! Try searching for specific ingredients or moods.`);
+                    }
+                    const suggestions = createQuickSuggestions([
+                        "Vegetarian only",
+                        "Non-veg dishes",
+                        "Under 400 calories",
+                        "Show desserts"
+                    ]);
+                    addBotMessage(suggestions, true);
+                }, results.length * 250 + 500);
+            }, 1000);
+        }
+
+        // Create Quick Suggestions
+        function createQuickSuggestions(suggestions) {
+            const container = document.createElement('div');
+            container.className = 'quick-suggestions';
+            
+            suggestions.forEach(text => {
+                const chip = document.createElement('div');
+                chip.className = 'suggestion-chip';
+                chip.textContent = text;
+                chip.addEventListener('click', () => {
+                    userInput.value = text;
+                    sendMessage();
+                });
+                container.appendChild(chip);
+            });
+            
+            return container;
+        }
+
+        // Add Bot Message
+        function addBotMessage(content, isHTML = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message bot';
+            
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = '🤖';
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            
+            if (isHTML && content instanceof HTMLElement) {
+                contentDiv.appendChild(content);
+            } else {
+                contentDiv.textContent = content;
+            }
+            
+            messageDiv.appendChild(avatar);
+            messageDiv.appendChild(contentDiv);
+            chatMessages.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        // Add User Message
+        function addUserMessage(text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message user';
+            
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = '👤';
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            contentDiv.textContent = text;
+            
+            messageDiv.appendChild(contentDiv);
+            messageDiv.appendChild(avatar);
+            chatMessages.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        // Show Typing Indicator
+        function showTypingIndicator() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message bot';
+            typingDiv.id = 'typingIndicator';
+            
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = '🤖';
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            
+            const indicator = document.createElement('div');
+            indicator.className = 'typing-indicator';
+            indicator.innerHTML = '<span></span><span></span><span></span>';
+            
+            contentDiv.appendChild(indicator);
+            typingDiv.appendChild(avatar);
+            typingDiv.appendChild(contentDiv);
+            chatMessages.appendChild(typingDiv);
+            scrollToBottom();
+        }
+
+        // Remove Typing Indicator
+        function removeTypingIndicator() {
+            const indicator = document.getElementById('typingIndicator');
+            if (indicator) {
+                indicator.remove();
+            }
+        }
+
+        // Create Dish Card
+        function createDishCard(dish) {
+            const card = document.createElement('div');
+            card.className = 'dish-card';
+            
+            const spiceIcons = {
+                'none': '',
+                'mild': '🌶️',
+                'medium': '🌶️🌶️',
+                'high': '🌶️🌶️🌶️'
+            };
+            
+            card.innerHTML = `
+                <div class="dish-card-header">
+                    <div class="dish-name-wrapper">
+                        <div class="dish-name">${dish.name}</div>
+                        <span class="dish-cuisine">${dish.cuisine}</span>
+                    </div>
+                    <div class="dish-price">₹${dish.price}</div>
+                </div>
+                <div class="dish-description">${dish.description}</div>
+                <div class="dish-info">
+                    <span class="info-badge">${dish.type}</span>
+                    <span class="info-badge">⭐ ${dish.rating}</span>
+                    <span class="info-badge">🔥 ${dish.calories} cal</span>
+                    ${dish.spiceLevel !== 'none' ? `<span class="info-badge">${spiceIcons[dish.spiceLevel]}</span>` : ''}
+                </div>
+                <div class="dish-ingredients">
+                    <div class="ingredients-label">Key Ingredients</div>
+                    <div class="ingredient-list">
+                        ${dish.ingredients.slice(0, 5).map(ing => `<span class="ingredient-tag">${ing}</span>`).join('')}
+                    </div>
+                </div>
+                <div class="dish-tags">
+                    ${dish.tags.slice(0, 4).map(tag => `<span class="dish-tag">#${tag}</span>`).join('')}
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Search Dishes
+        function searchDishes(query) {
+            query = query.toLowerCase();
+            
+            let results = menuData.filter(dish => {
+                // Apply current filter
+                if (currentFilter !== 'all' && dish.cuisine !== currentFilter) return false;
+                
+                // Search logic
+                return dish.name.toLowerCase().includes(query) ||
+                       dish.description.toLowerCase().includes(query) ||
+                       dish.tags.some(tag => tag.toLowerCase().includes(query)) ||
+                       dish.ingredients.some(ing => ing.toLowerCase().includes(query)) ||
+                       dish.cuisine.toLowerCase().includes(query) ||
+                       dish.type.toLowerCase().includes(query) ||
+                       (query.includes('spicy') && dish.spiceLevel !== 'none') ||
+                       (query.includes('healthy') && dish.calories < 400) ||
+                       (query.includes('dessert') && dish.category === 'Dessert') ||
+                       (query.includes('veg') && dish.type === 'Veg') ||
+                       (query.includes('non-veg') && dish.type === 'Non-Veg');
+            });
+            
+            return results;
+        }
+
+        // Process User Query
+        function processQuery(query) {
+            showTypingIndicator();
+            sendButton.disabled = true;
+            
+            setTimeout(() => {
+                removeTypingIndicator();
+                
+                const results = searchDishes(query);
+                
+                if (results.length === 0) {
+                    addBotMessage("🤔 Hmm, I couldn't find exactly what you're looking for. But here are some popular dishes you might love:");
+                    
+                    // Show some popular dishes
+                    const popular = menuData.slice(0, 3);
+                    popular.forEach((dish, index) => {
+                        setTimeout(() => {
+                            const card = createDishCard(dish);
+                            addBotMessage(card, true);
+                        }, index * 250);
+                    });
+                } else {
+                    addBotMessage(`✨ Perfect! I found ${results.length} dish${results.length > 1 ? 'es' : ''} for you:`);
+                    
+                    // Show results
+                    results.slice(0, 5).forEach((dish, index) => {
+                        setTimeout(() => {
+                            const card = createDishCard(dish);
+                            addBotMessage(card, true);
+                        }, index * 250);
+                    });
+                    
+                    if (results.length > 5) {
+                        setTimeout(() => {
+                            addBotMessage(`And ${results.length - 5} more! Try refining your search.`);
+                        }, results.length * 250 + 300);
+                    }
+                }
+                
+                // Show suggestions
+                setTimeout(() => {
+                    const suggestions = createQuickSuggestions([
+                        "Show me more",
+                        "Something different",
+                        "Best rated dishes",
+                        "Light meals"
+                    ]);
+                    addBotMessage(suggestions, true);
+                }, results.length * 250 + 600);
+                
+                sendButton.disabled = false;
+            }, 1200);
+        }
+
+        // Send Message
+        function sendMessage() {
+            const text = userInput.value.trim();
+            
+            if (text === '' || sendButton.disabled) return;
+            
+            addUserMessage(text);
+            userInput.value = '';
+            
+            processQuery(text);
+        }
+
+        // Event Listeners
+        sendButton.addEventListener('click', sendMessage);
+        
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !sendButton.disabled) {
+                sendMessage();
+            }
+        });
+
+        // Scroll to Bottom
+        function scrollToBottom() {
+            setTimeout(() => {
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 100);
+        }
+    </script>
+
+</body>
+</html>
+
+
+</body>
+
+</html>
